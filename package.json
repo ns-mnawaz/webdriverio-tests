@@ -1,0 +1,27 @@
+{
+  "name": "webdriverio-tests",
+  "version": "1.0.0",
+  "description": "An examples of how to use the webdriver.io api. Tests executed against 'https://www.food2fork.com/'.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mir-nawaz/webdriverio-tests.git"
+  },
+  "keywords": [
+    "webdriverio",
+    "mocha",
+    "chai",
+    "selenium",
+    "nodejs",
+    "es6"
+  ],
+  "author": "Mir Nawaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mir-nawaz/webdriverio-tests/issues"
+  },
+  "homepage": "https://github.com/mir-nawaz/webdriverio-tests#readme"
+}
