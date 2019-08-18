@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix",
     "test": "wdio wdio.conf.js",
     "test:register": "wdio wdio.conf.js --spec ./test/specs/register.js",
-    "test:register.api": "wdio wdio.conf.js --spec ./test/specs/register.api.js",
+    "test:search.api": "wdio wdio.conf.js --spec ./test/specs/search.api.js",
     "test:search": "wdio wdio.conf.js --spec ./test/specs/home.search.js",
     "echo": "echo \"Running eslint rules ... \" && exit 0"
   },

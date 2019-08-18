@@ -21,8 +21,8 @@ This project was created to serve as a reference to others interested in ES6 web
 3) ```npm run test```
 4) ```npm run test:unit```
 5) ```npm run test:register```
-6) ```npm run test:register.api```
-7) ```npm run test:search```
+6) ```npm run test:search```
+7) ```npm run test:search.api```
 
 # Run standalone spec
 To execute a standalone spec run  ``` ./node_modules/.bin/wdio --spec <path to test> ./wdio.conf.js```
