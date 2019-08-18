@@ -17,6 +17,8 @@ build_webpack
 # build folder
 build
 **/build
+dist
+**/dist
 
 # WebStrom indexes idea
 .idea
@@ -30,11 +32,11 @@ build
 *.log.*
 **/*.log.*
 **/*.log
-logs/**
-!logs/.keep
 
 # blocks
 **/*.block
+
+
 
 # package lock
 *-lock.json
@@ -46,5 +48,5 @@ logs/**
 node_modules
 **/node_modules
 
-# build
-dist/
+# frontend build
+build_webpack/

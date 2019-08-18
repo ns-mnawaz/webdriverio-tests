@@ -2,10 +2,24 @@
   "name": "webdriverio-tests",
   "version": "1.0.0",
   "description": "An examples of how to use the webdriver.io api. Tests executed against 'https://www.food2fork.com/'.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node ./src/index.js",
+    "build": "babel src --out-dir ./dist --source-maps",
+    "test:unit": "mocha 'test/unit/*.spec.js' --require @babel/register",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": "wdio wdio.conf.js",
+    "test:register": "wdio wdio.conf.js --spec ./test/specs/register.js",
+    "test:register.api": "wdio wdio.conf.js --spec ./test/specs/register.api.js",
+    "test:search": "wdio wdio.conf.js --spec ./test/specs/home.search.js",
+    "echo": "echo \"Running eslint rules ... \" && exit 0"
   },
+  "pre-commit": [
+    "echo",
+    "lint",
+    "test:unit"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mir-nawaz/webdriverio-tests.git"
@@ -23,5 +37,29 @@
   "bugs": {
     "url": "https://github.com/mir-nawaz/webdriverio-tests/issues"
   },
-  "homepage": "https://github.com/mir-nawaz/webdriverio-tests#readme"
+  "homepage": "https://github.com/mir-nawaz/webdriverio-tests#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@wdio/cli": "^5.12.1",
+    "@wdio/dot-reporter": "^5.12.1",
+    "@wdio/local-runner": "^5.12.1",
+    "@wdio/mocha-framework": "^5.12.1",
+    "@wdio/spec-reporter": "^5.12.1",
+    "@wdio/sync": "^5.12.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "chromedriver": "^76.0.0",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-wdio": "^5.12.1",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1",
+    "pre-commit": "^1.2.2",
+    "wdio-chromedriver-service": "^5.0.2"
+  }
 }
