@@ -13,11 +13,13 @@
     "test:register": "wdio wdio.conf.js --spec ./test/specs/register.js",
     "test:search.api": "wdio wdio.conf.js --spec ./test/specs/search.api.js",
     "test:search": "wdio wdio.conf.js --spec ./test/specs/home.search.js",
-    "echo": "echo \"Running eslint rules ... \" && exit 0"
+    "echo:lint": "echo \"Running eslint rules ... \" && exit 0",
+    "echo:test": "echo \"Running Unit Tests ... \" && exit 0"
   },
   "pre-commit": [
-    "echo",
+    "echo:lint",
     "lint",
+    "echo:test",
     "test:unit"
   ],
   "repository": {
