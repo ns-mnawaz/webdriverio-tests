@@ -14,6 +14,7 @@ This project was created to serve as a reference to others interested in ES6 web
 * Node.js - The latest [LTS release](https://nodejs.org/en/)
 * Java -- Needed to run the selenium server
 * Chrome.
+* Ubuntu 18.04 
 
 # Test execution
 1) Clone the latest version of this repo.
