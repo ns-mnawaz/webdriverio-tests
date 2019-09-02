@@ -48,3 +48,7 @@ node_modules
 
 # build
 dist/
+
+#Reports
+allure-results/
+allure-report/

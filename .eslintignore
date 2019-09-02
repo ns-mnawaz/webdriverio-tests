@@ -50,3 +50,7 @@ node_modules
 
 # frontend build
 build_webpack/
+
+#Reports
+allure-results/
+allure-report/

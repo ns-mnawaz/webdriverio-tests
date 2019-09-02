@@ -25,6 +25,11 @@ This project was created to serve as a reference to others interested in ES6 web
 6) ```npm run test:search```
 7) ```npm run test:search.api```
 
+# ALLURE REPORTER
+## Report 
+```npm run report```
+![Allure Report](allure-report.PNG)
+
 # Run standalone spec
 To execute a standalone spec run  ``` ./node_modules/.bin/wdio --spec <path to test> ./wdio.conf.js```
 
